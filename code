@@ -1,0 +1,10 @@
+SELECT activity_date,
+avg(very_active_distance) as very_active_distance_avg, 
+avg(moderately_active_distance) as moderately_active_distance_avg, 
+avg(light_active_distance) as light_active_distance_avg, 
+avg(sedentary_active_distance) as sedentary_active_distance_avg
+
+FROM `fitbitproject18677.daily.activity` 
+
+GROUP BY activity_date
+ORDER BY activity_date
